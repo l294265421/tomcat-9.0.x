@@ -49,7 +49,7 @@ The public interfaces for the following classes are fixed and will not be
 changed at all during the remaining lifetime of the @VERSION_MAJOR@.x series:
 - None
 
-The public interfaces for the following classes may be added to in order to
+The public interfaces for the following classes may be added in order to
 resolve bugs and/or add new features. No existing interface method will be
 removed or changed although it may be deprecated.
 - None
@@ -107,14 +107,14 @@ is stopped, etc.), the shared libraries state should be reinitialized.
 Something which might help is to avoid putting classes which would be
 referenced by a shared static field in the web application classloader,
 and putting them in the shared classloader instead (JARs should be put in the
-"lib" folder, and classes should be put in the "classes" folder).
+"lib" folder and classes should be put in the "classes" folder).
 
 
 ======================
 Security manager URLs:
 ======================
 In order to grant security permissions to JARs located inside the
-web application repository, use URLs of of the following format
+web application repository, use URLs of the following format
 in your policy file:
 
 file:${catalina.base}/webapps/examples/WEB-INF/lib/driver.jar
@@ -144,7 +144,7 @@ This distribution includes cryptographic software.  The country in
 which you currently reside may have restrictions on the import,
 possession, use, and/or re-export to another country, of
 encryption software.  BEFORE using any encryption software, please
-check your country's laws, regulations and policies concerning the
+check your country's laws, regulations, and policies concerning the
 import, possession, or use, and re-export of encryption software, to
 see if this is permitted.  See <http://www.wassenaar.org/> for more
 information.
